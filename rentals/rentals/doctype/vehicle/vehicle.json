@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-03-14 22:37:14.109095",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "make",
+  "year",
+  "color",
+  "license_expiry",
+  "column_break_cfsg",
+  "model",
+  "license_plate",
+  "read_only_work",
+  "is_published",
+  "route",
+  "images",
+  "status",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "color"
+  },
+  {
+   "fieldname": "column_break_cfsg",
+   "fieldtype": "Column Break",
+   "options": "Active\nOut of Service\nSold\nCrashed"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "label": "License Plate"
+  },
+  {
+   "default": "This is Read only",
+   "fieldname": "read_only_work",
+   "fieldtype": "Read Only",
+   "label": "Read only work"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Read Only",
+   "label": "Title",
+   "no_copy": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is_published",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Read Only",
+   "label": "Route",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Attach Image",
+   "label": "images"
+  },
+  {
+   "fieldname": "license_expiry",
+   "fieldtype": "Date",
+   "label": "License Expiry"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOut of Service\nSold\nCrushed"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Rating",
+   "label": "Rate"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2025-03-31 10:10:17.988835",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Vehicle",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "cars",
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

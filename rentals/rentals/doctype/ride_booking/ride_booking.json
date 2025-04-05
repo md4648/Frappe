@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-31 09:12:04.365340",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wmat",
+  "order",
+  "vehicle",
+  "amended_from",
+  "column_break_gkyx",
+  "driver",
+  "still_editting",
+  "not_edited",
+  "trips_section",
+  "trips",
+  "rateper_km_secti",
+  "rate",
+  "column_break_lsqz",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wmat",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Link",
+   "label": "Order",
+   "options": "Ride Order"
+  },
+  {
+   "fieldname": "column_break_gkyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "still_editting",
+   "fieldtype": "Data",
+   "label": "Still Editting"
+  },
+  {
+   "fieldname": "trips_section",
+   "fieldtype": "Section Break",
+   "label": "Trips"
+  },
+  {
+   "fieldname": "trips",
+   "fieldtype": "Table",
+   "label": "Trips",
+   "options": "Ride Booking Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "column_break_lsqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rateper_km_secti",
+   "fieldtype": "Section Break",
+   "label": "Rate(per km)"
+  },
+  {
+   "fetch_from": "order.veicle",
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "not_edited",
+   "fieldtype": "Data",
+   "label": "not edited"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-01 13:38:53.143131",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Ride Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

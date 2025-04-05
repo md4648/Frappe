@@ -1,0 +1,17 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title |e }}</h1>
+<h2>{{doc.title}} This is from vehicle.html</h2>
+<h2>Color: {{doc.color}}</h2>
+{% if doc.images%}
+<img style="width:600px;" src="{{doc.images}}" alt="">
+{%else%}
+    <span>No images available</span>
+{%endif%}
+
+<br><a class="btn btn" href="/order-ride/new?veicle={{doc.make}}">Book Ride</a>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->
