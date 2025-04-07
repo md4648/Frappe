@@ -126,7 +126,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-04-07 10:46:34.384499",
+ "modified": "2025-04-07 15:06:15.237952",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -144,7 +144,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  }
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Manager",
+   "share": 1
+  },
+
+  {
+    "email": 1,
+    "print": 1,
+    "read": 1,
+    "report": 1,
+    "role": "Vehicle Supervisor ",
+    "share": 1
+   }
+
  ],
  "route": "cars",
  "row_format": "Dynamic",
