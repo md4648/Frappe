@@ -13,6 +13,8 @@
   "year",
   "color",
   "license_expiry",
+  "get_summary",
+  "summary",
   "column_break_cfsg",
   "model",
   "license_plate",
@@ -21,7 +23,8 @@
   "route",
   "images",
   "status",
-  "rate"
+  "rate",
+  "duration"
  ],
  "fields": [
   {
@@ -100,6 +103,21 @@
    "fieldname": "rate",
    "fieldtype": "Rating",
    "label": "Rate"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
   }
  ],
  "grid_page_length": 50,
@@ -108,7 +126,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-03-31 10:10:17.988835",
+ "modified": "2025-04-07 10:46:34.384499",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",

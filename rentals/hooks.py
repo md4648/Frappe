@@ -140,6 +140,12 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+	"ToDo": {
+		"before_insert": "rentals.api.throw_emoji",
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 
@@ -160,6 +166,21 @@ app_license = "mit"
 # 		"rentals.tasks.monthly"
 # 	],
 # }
+
+
+
+scheduler_events = {
+    "cron":{
+
+        "30 15 * * 3": [# this schedule is  every wendsday at 
+                "rentals.api.send_rental_reminders"
+            ],
+
+    }
+	
+}
+
+
 
 # Testing
 # -------

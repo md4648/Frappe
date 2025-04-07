@@ -6,6 +6,11 @@ from frappe.model.document import Document
 
 
 class RideBooking(Document):
+
+	# def validate(self):
+	# 	if not self.rate:
+	# 		self.rate=frappe.db.get_single_value("Rental Setting","standard_rate")
+		
 	# def validate(self):
 	# 	total_distance=0
 	# 	if not self.rate:

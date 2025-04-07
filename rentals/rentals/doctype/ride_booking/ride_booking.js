@@ -8,10 +8,21 @@ frappe.ui.form.on("Ride Booking", {
             frappe.show_alert("It is Clicked")
         })
 
+        if( frm.doc.rate==""){
+            frm.set_value("rate",frappe.db.get_single_value("Rental Setting","standard_rate"))
+            frm.save()
+            
+           
+        }
+        frm.trigger("update_total_amount")
+
 	},
 
     rate(frm){
+
+        
         frm.trigger("update_total_amount")
+        
     },
 
     update_total_amount(frm){
@@ -35,7 +46,6 @@ frappe.ui.form.on('Ride Booking Item', {
        
 	},
 
-    
     distance(frm,cdt,cdm){// cdt is name child table and cdm is what row of child table
         // console.log("Distance is change below ")
         // console.log(cdt,cdm);

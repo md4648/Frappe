@@ -4,6 +4,8 @@
 <h1>{{ title |e }}</h1>
 <h2>{{doc.title}} This is from vehicle.html</h2>
 <h2>Color: {{doc.color}}</h2>
+<h2>duration: {{frappe.utils.format_duration(doc.duration)}}</h2>
+<h2>Site: {{frappe.get_url()}}</h2>
 {% if doc.images%}
 <img style="width:600px;" src="{{doc.images}}" alt="">
 {%else%}
