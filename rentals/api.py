@@ -11,3 +11,9 @@ def throw_emoji(doc,event):
 
 def send_rental_reminders():
     print("The is Schduled task okay")
+
+def get_query_condition_for_vehicle(user):
+    
+    # frappe.throw(user)
+
+    return "name=2"

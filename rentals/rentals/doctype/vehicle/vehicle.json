@@ -17,6 +17,7 @@
   "summary",
   "column_break_cfsg",
   "model",
+  "audit_completed",
   "license_plate",
   "read_only_work",
   "is_published",
@@ -118,6 +119,13 @@
    "fieldname": "summary",
    "fieldtype": "HTML",
    "label": "Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "audit_completed",
+   "fieldtype": "Check",
+   "label": "Audit Completed",
+   "permlevel": 1
   }
  ],
  "grid_page_length": 50,
@@ -126,7 +134,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-04-07 15:06:15.237952",
+ "modified": "2025-04-08 11:12:01.212042",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -147,22 +155,39 @@
   },
   {
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Vehicle Manager",
    "share": 1
   },
-
   {
-    "email": 1,
-    "print": 1,
-    "read": 1,
-    "report": 1,
-    "role": "Vehicle Supervisor ",
-    "share": 1
-   }
-
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Supervisor",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "Vehicle Auditor",
+   "write": 1
+  }
  ],
  "route": "cars",
  "row_format": "Dynamic",
@@ -170,5 +195,8 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "title"
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
